@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portfolio of Parthiv Reddy - BTech CSE Student, AI Enthusiast, and Entrepreneur">
+    <title>Portfolio - Parthiv Reddy</title>
+    <link rel="stylesheet" href="./css/base.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/components.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preload" href="./css/base.css" as="style">
+    <link rel="preload" href="./css/components.css" as="style">
+    <link rel="preload" href="./css/transitions.css" as="style">
+    <link rel="preload" href="./js/main.js" as="script">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" as="image" href="./Assets/Profile.png">
+    <link rel="preload" as="image" href="./Assets/favicon.ico">
+    <meta name="theme-color" content="#0a192f">
+    <meta name="msapplication-navbutton-color" content="#0a192f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0a192f">
+    <meta name="color-scheme" content="dark light">
+    <meta name="mozilla-theme-color" content="#0a192f">
+    <meta name="keywords" content="Parthiv Reddy, Portfolio, BTech CSE, AI, Entrepreneur">
+    <meta name="author" content="Parthiv Reddy">
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.56/build/spline-viewer.js" async></script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Portfolio - Parthiv Reddy">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./css/transitions.css" media="print" onload="this.media='all'">
+
+    <style>
+        :root { --primary-color: #0a192f; --accent-color: #64ffda; }
+        body { margin: 0; background: var(--primary-color); }
+        .navbar { position: fixed; width: 100%; z-index: 1000; }
+    </style>
+
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="theme-color" content="#0a192f">
+
+    <noscript>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/components.css">
+        <link rel="stylesheet" href="./css/transitions.css">
+    </noscript>
+</head>
+<body class="preload dark-theme">
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="sr-only">Toggle Menu</span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero section-transition">
+            <div class="glow-effect"></div>
+            
+            <div class="hero-content-wrapper">
+                <div class="hero-content">
+                    <div class="welcome-message" data-aos="fade-up">Welcome to my Portfolio</div>
+                    <div class="typing-container" data-aos="fade-up" data-aos-delay="100">
+                        <span class="typed-text"></span>
+                    </div>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Crafting innovative solutions at the intersection of technology and creativity
+                    </p>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#projects" class="explore-button">
+                            <span class="button-text">Explore My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="spline-container" data-aos="fade-left" data-aos-delay="400">
+                <spline-viewer 
+                    url="https://prod.spline.design/zDMyfvcwOgMYssQy/scene.splinecode"
+                    loading-anim="true"
+                    loading-style="dark"
+                    class="spline-viewer"
+                    auto-rotate="true">
+                </spline-viewer>
+            </div>
+        </section>
+
+        <section id="about" class="about section-transition">
+            <h2>About Me</h2>
+            <div class="about-container fade-in">
+                <div class="about-content">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image-container">
+                                <img 
+                                    src="./Assets/Profile.png"
+                                    alt="Parthiv Reddy - Professional Headshot" 
+                                    class="profile-image"
+                                    data-lightbox="true"
+                                >
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>YARRAPUREDDY PARTHIV REDDY</h3>
+                            <p class="subtitle">BTech CSE Student at Mahindra University</p>
+                            <div class="about-text">
+                                <p>
+                                    Passionate computer science student with a keen interest in artificial intelligence 
+                                    and entrepreneurship. Currently pursuing my Bachelor's degree in Computer Science 
+                                    Engineering at Mahindra University (2022-2026).
+                                </p>
+                                <p>
+                                    Skilled in Python, Java, and various ML frameworks. Founded Mango Fusion, 
+                                    demonstrating my entrepreneurial spirit. Committed to leveraging technology 
+                                    for innovative solutions.
+                                </p>
+                            </div>
+                            <div class="cta-buttons">
+                                <a href="./Assets/Latest Resume.pdf" class="resume-button" download>
+                                    <i class="fas fa-file-download"></i>
+                                    Download Resume
+                                </a>
+                                <a href="#contact" class="contact-button">
+                                    <i class="fas fa-envelope"></i>
+                                    Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>2022 - 2026</h4>
+                                <p>BTech CSE Student at Mahindra University</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>April 2023</h4>
+                                <p>Founder, Mango Fusion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-transition">
+            <h2>Skills</h2>
+            <div class="skills-container stagger-children">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="90">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <i class="fas fa-copyright"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Technical Expertise</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="85">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <i class="fas fa-database"></i>
+                            <span>DBMS</span>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Cloud</span>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux/Unix</span>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <i class="fas fa-object-group"></i>
+                            <span>OOP</span>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Networking</span>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-transition">
+            <h2>Projects</h2>
+            <div class="projects-carousel reveal-scale">
+                <button class="carousel-btn prev-btn" aria-label="Previous project">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="./Assets/Child website.webp" alt="Online Risks Awareness Website">
+                        <div class="project-content">
+                            <h3>Online Risks Awareness Website</h3>
+                            <p>Designed and developed an interactive website using Google Sites and JavaScript to educate parents and children about online risks such as cyberbullying and privacy breaches.</p>
+                            <div class="project-tech">
+                                <span>Google Sites</span>
+                                <span>JavaScript</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sites.google.com/view/design-dynamos/home?authuser=0" 
+                                   class="demo-link" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   title="View Live Demo"
+                                   aria-label="View live project demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./Assets/Real Estate.webp" alt="Property Price Prediction">
+                        <div class="project-content">
+                            <h3>Property Price Prediction Model</h3>
+                            <p>Built a machine learning model using Python, NumPy, and Pandas to predict property prices with ~80% accuracy. Preprocessed data and fine-tuned Random Forest algorithm.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>ML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" 
+                                   class="github-link" 
+                                   title="View Project Source Code"
+                                   aria-label="View source code on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./Assets/Disease Prediction.webp" alt="Disease Diagnosis Model">
+                        <div class="project-content">
+                            <h3>Patient Disease Diagnosis Model</h3>
+                            <p>Developed a Gradient Boosting-based model to diagnose diseases using patient data, achieving an ROC-AUC score of ~0.9. Implemented SMOTE for class imbalance.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>SMOTE</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" 
+                                   class="github-link" 
+                                   title="View Project Source Code"
+                                   aria-label="View source code on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="./Assets/KBC.webp" alt="Interactive Quiz Game">
+                        <div class="project-content">
+                            <h3>Interactive Quiz Game (KBC-style)</h3>
+                            <p>Developed a survival-based quiz game with a visually appealing GUI in Java. Implemented lifelines, question bank management, and dynamic scoring.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>GUI</span>
+                                <span>Game Dev</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" 
+                                   class="github-link" 
+                                   title="View Project Source Code"
+                                   aria-label="View source code on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card premium-card">
+                        <img src="./Assets/Mango Fussion.webp" alt="Mango Fusion">
+                        <div class="project-content">
+                            <h3>Mango Fusion</h3>
+                            <p>Founded and launched a successful business with an initial investment of ₹5,000, generating a profit of ₹8,500. Gained hands-on experience in business planning, market analysis, and financial management.</p>
+                            <div class="project-tech">
+                                <span>Entrepreneurship</span>
+                                <span>Business</span>
+                                <span>Marketing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" 
+                                   class="demo-link" 
+                                   title="View Live Demo"
+                                   aria-label="View live project demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next project">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <div class="container">
+                <h2>Certifications & Achievements</h2>
+                
+                <div class="section-container certifications">
+                    <h3><i class="fas fa-certificate"></i> Professional Certifications</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate-card">
+                            <div class="certificate-inner">
+                                <div class="certificate-header">
+                                    <i class="fab fa-google"></i>
+                                    <div class="cert-stamp">Verified</div>
+                                </div>
+                                <div class="certificate-body">
+                                    <h4>Google IT Support</h4>
+                                    <p class="issuer">Google (Coursera)</p>
+                                    <div class="cert-skills">
+                                        <span>Networking</span>
+                                        <span>IT Support</span>
+                                        <span>Cybersecurity</span>
+                                        <span>Operating Systems</span>
+                                    </div>
+                                </div>
+                                <div class="certificate-footer">
+                                    <span class="cert-date"><i class="fas fa-calendar"></i> 2024</span>
+                                    <a href="https://coursera.org/verify/professional-cert/ZE34WSY4HAZ4" 
+                                       class="verify-link" 
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       title="Verify Certificate"
+                                       aria-label="Verify certificate authenticity">
+                                        Verify <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-inner">
+                                <div class="certificate-header">
+                                    <i class="fas fa-cloud"></i>
+                                    <div class="cert-stamp">Verified</div>
+                                </div>
+                                <div class="certificate-body">
+                                    <h4>Oracle Cloud Infrastructure Generative AI</h4>
+                                    <p class="issuer">Oracle</p>
+                                    <div class="cert-skills">
+                                        <span>Cloud</span>
+                                        <span>AI/ML</span>
+                                        <span>GenAI</span>
+                                    </div>
+                                </div>
+                                <div class="certificate-footer">
+                                    <span class="cert-date"><i class="fas fa-calendar"></i> 2024</span>
+                                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=892A114C1E4ACF45B8B614B2A42C15DB924A994AF70B5277FD82C446F0B27EC6" 
+                                       class="verify-link" 
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       title="Verify Certificate"
+                                       aria-label="Verify certificate authenticity">
+                                        Verify <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-inner">
+                                <div class="certificate-header">
+                                    <i class="fab fa-python"></i>
+                                    <div class="cert-stamp">Verified</div>
+                                </div>
+                                <div class="certificate-body">
+                                    <h4>Python Specialization</h4>
+                                    <p class="issuer">University of Michigan (Coursera)</p>
+                                    <div class="cert-skills">
+                                        <span>Python</span>
+                                        <span>Programming</span>
+                                        <span>Data Structures</span>
+                                        <span>Web Scraping</span>
+                                    </div>
+                                </div>
+                                <div class="certificate-footer">
+                                    <span class="cert-date"><i class="fas fa-calendar"></i> 2024</span>
+                                    <a href="https://coursera.org/verify/specialization/D83PG366YJ3M" 
+                                       class="verify-link" 
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       title="Verify Certificate"
+                                       aria-label="Verify certificate authenticity">
+                                        Verify <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-inner">
+                                <div class="certificate-header">
+                                    <i class="fas fa-brain"></i>
+                                    <div class="cert-stamp">Verified</div>
+                                </div>
+                                <div class="certificate-body">
+                                    <h4>Machine Learning</h4>
+                                    <p class="issuer">Stanford University (Coursera)</p>
+                                    <div class="cert-skills">
+                                        <span>ML</span>
+                                        <span>ML Algorithms</span>
+                                        <span>AI</span>
+                                        <span>Data Science</span>
+                                    </div>
+                                </div>
+                                <div class="certificate-footer">
+                                    <span class="cert-date"><i class="fas fa-calendar"></i> 2024</span>
+                                    <a href="https://coursera.org/verify/YZUCXF5W4UWP" 
+                                       class="verify-link" 
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       title="Verify Certificate"
+                                       aria-label="Verify certificate authenticity">
+                                        Verify <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-inner">
+                                <div class="certificate-header">
+                                    <i class="fas fa-database"></i>
+                                    <div class="cert-stamp">Verified</div>
+                                </div>
+                                <div class="certificate-body">
+                                    <h4>Database Management</h4>
+                                    <p class="issuer">UC Boulder (Coursera)</p>
+                                    <div class="cert-skills">
+                                        <span>SQL</span>
+                                        <span>Database Design</span>
+                                        <span>DBMS</span>
+                                        <span>DB Administration</span>
+                                    </div>
+                                </div>
+                                <div class="certificate-footer">
+                                    <span class="cert-date"><i class="fas fa-calendar"></i> 2024</span>
+                                    <a href="https://coursera.org/verify/specialization/L0F6ARXOQBII" 
+                                       class="verify-link" 
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       title="Verify Certificate"
+                                       aria-label="Verify certificate authenticity">
+                                        Verify <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-container achievements">
+                    <h3><i class="fas fa-trophy"></i> Notable Achievements</h3>
+                    <div class="grid-container">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Qiskit Fall Fest (IBM)</h3>
+                            <p>Successfully participated in and completed a Qiskit project as part of the Qiskit Fall Fest hosted by IBM in collaboration with Qubit (Quantum Computing Club in MU)</p>
+                            <div class="achievement-meta">
+                                <span class="achievement-date">
+                                    <i class="fas fa-calendar"></i> 2023
+                                </span>
+                                <a href="./Assets/Quibit IBM Qiskit.png" 
+                                   class="view-achievement"
+                                   target="_blank"
+                                   data-lightbox="achievement"
+                                   title="View IBM Quantum Certificate">
+                                    View Details <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>AWS Quantum Workshop</h3>
+                            <p>Attended and actively participated in a full-day workshop on Quantum Computing using Amazon Braket, conducted by AWS and Qubit (Quantum Computing Club in MU).</p>
+                            <div class="achievement-meta">
+                                <span class="achievement-date">
+                                    <i class="fas fa-calendar"></i> 2024
+                                </span>
+                                <a href="./Assets/Quibit AWS.png" 
+                                   class="view-achievement"
+                                   target="_blank"
+                                   data-lightbox="achievement"
+                                   title="View AWS Quantum Achievement">
+                                    View Details <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>HackerRank Excellence</h3>
+                            <p>Demonstrated proficiency in Python by completing the HackerRank Python (Basic) skills assessment on April 13, 2024.</p>
+                            <div class="achievement-meta">
+                                <span class="achievement-date">
+                                    <i class="fas fa-calendar"></i> 2024
+                                </span>
+                                <a href="./Assets/Hacker rank Python Certificate.pdf" 
+                                   class="view-achievement"
+                                   target="_blank"
+                                   title="View HackerRank Certificate">
+                                    View Profile <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-transition">
+            <h2>Contact Me</h2>
+            <div class="contact-container fade-in">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:parthivreddy7769@gmail.com" class="contact-link">parthivreddy7769@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <a href="https://maps.google.com/?q=Hyderabad,Telangana" target="_blank" rel="noopener noreferrer" class="contact-link">Hyderabad, Telangana</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <a href="tel:+917207087769" class="contact-link">(+91) 7207087769</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ParthivReddyY" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="GitHub Profile"
+                           title="Visit my GitHub Profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/parthiv-reddy-yarrapureddy" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="LinkedIn Profile"
+                           title="Connect with me on LinkedIn">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/ParthivReddy_Y" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Twitter Profile"
+                           title="Follow me on Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-quote">
+                <p>"Building the future through code, one line at a time."</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-inner">
+                    <div class="footer-brand">
+                        <h3 class="footer-logo">Portfolio</h3>
+                        <p>A showcase of creativity, innovation, and technical expertise in software development.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#certifications">Certifications</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-connect">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/ParthivReddyY" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Visit my GitHub Profile"
+                               aria-label="GitHub Profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/parthiv-reddy-yarrapureddy" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Connect with me on LinkedIn"
+                               aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/ParthivReddy_Y" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Follow me on Twitter"
+                               aria-label="Twitter Profile">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parthiv Reddy. All rights reserved.</p>
+            </div>
+        </div>
+        <button id="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" role="button" aria-label="Close image">&times;</span>
+        <img id="lightbox-img" class="lightbox-content lightbox-image" src="" alt="Parthiv Reddy - Full Size">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/contact.js"></script>
+    <script>
+        window.addEventListener('load', () => document.body.classList.remove('preload'));
+    </script>
+</body>
+</html>
