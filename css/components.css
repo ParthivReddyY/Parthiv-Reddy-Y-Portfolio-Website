@@ -3037,5 +3037,265 @@ body.light-theme .explore-button::before {
 }
 
 body.light-theme .explore-button:hover {
-    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.15);
+}
+
+/* Premium Light Theme Component Styles */
+body.light-theme .contact-card {
+    background: var(--light-primary);
+    border: 1px solid var(--light-border);
+    box-shadow: 0 4px 15px var(--light-shadow);
+}
+
+body.light-theme .contact-card:hover {
+    background: var(--light-accent-subtle);
+    border-color: var(--light-accent);
+    transform: translateX(10px);
+}
+
+body.light-theme .contact-card i {
+    color: var(--light-accent);
+}
+
+body.light-theme .social-links a {
+    color: var(--light-muted);
+    background: var(--light-primary);
+    box-shadow: 0 2px 8px var(--light-shadow);
+}
+
+body.light-theme .social-links a:hover {
+    color: var(--light-accent);
+    background: var(--light-accent-subtle);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(201, 100, 66, 0.2);
+}
+
+body.light-theme #contact-form {
+    background: var(--light-primary);
+    box-shadow: 0 5px 20px var(--light-shadow);
+    border: 1px solid var(--light-border);
+}
+
+body.light-theme #contact-form input,
+body.light-theme #contact-form textarea {
+    background: var(--light-secondary);
+    border: 1px solid var(--light-border);
+    color: var(--light-text-primary);
+}
+
+body.light-theme #contact-form input:focus,
+body.light-theme #contact-form textarea:focus {
+    border-color: var(--light-accent);
+    box-shadow: 0 0 0 3px rgba(201, 100, 66, 0.15);
+}
+
+body.light-theme #contact-form button {
+    color: var(--light-accent);
+    border-color: var(--light-accent);
+}
+
+body.light-theme #contact-form button:hover {
+    background: var(--light-accent-subtle);
+    transform: translateY(-2px);
+}
+
+/* Premium buttons - terracotta style */
+body.light-theme .cta-button {
+    background: var(--light-accent);
+    color: white;
+    border: none;
+}
+
+body.light-theme .cta-button:hover {
+    background: var(--light-accent-hover);
+    box-shadow: 0 5px 15px rgba(201, 100, 66, 0.2);
+}
+
+body.light-theme .resume-button {
+    color: var(--light-accent);
+    border: 2px solid var(--light-accent);
+    background: transparent;
+}
+
+body.light-theme .resume-button:hover {
+    background: rgba(201, 100, 66, 0.08);
+}
+
+body.light-theme .contact-button {
+    background: var(--light-accent);
+    color: white;
+    border: none;
+}
+
+body.light-theme .contact-button:hover {
+    background: var(--light-accent-hover);
+    color: white;
+}
+
+/* Timeline adjustments for premium light theme */
+body.light-theme .timeline {
+    border-left-color: var(--light-border);
+}
+
+body.light-theme .timeline-content {
+    background: var(--light-secondary);
+    border-color: var(--light-border);
+    box-shadow: 0 4px 15px var(--light-shadow);
+}
+
+body.light-theme .timeline-content:hover {
+    border-color: var(--light-accent);
+    box-shadow: 0 10px 20px rgba(201, 100, 66, 0.15);
+}
+
+body.light-theme .timeline-content h4 {
+    color: var(--light-accent);
+}
+
+body.light-theme .timeline-content p {
+    color: var(--light-text-secondary);
+}
+
+body.light-theme .timeline-dot {
+    background: var(--light-primary);
+    border-color: var(--light-accent);
+}
+
+/* Project card premium light theme adjustments */
+body.light-theme .project-card {
+    background: var(--light-primary);
+    border: 1px solid var(--light-border);
+}
+
+body.light-theme .project-card.active {
+    border-color: var(--light-accent);
+    box-shadow: 0 10px 30px -15px var(--light-shadow);
+}
+
+body.light-theme .project-content {
+    background: var(--light-card-gradient);
+}
+
+body.light-theme .project-content h3 {
+    color: var(--light-accent);
+}
+
+body.light-theme .project-content p {
+    color: var(--light-text-secondary);
+}
+
+body.light-theme .project-tech span {
+    background: var(--light-accent-subtle);
+    color: var(--light-accent);
+}
+
+body.light-theme .project-tech span:hover {
+    background: rgba(201, 100, 66, 0.15);
+}
+
+body.light-theme .project-links {
+    border-top: 1px solid var(--light-border);
+}
+
+body.light-theme .project-links a {
+    color: var(--light-text-primary);
+}
+
+body.light-theme .project-links a:hover {
+    color: var(--light-accent);
+}
+
+body.light-theme .carousel-btn {
+    background: var(--light-accent);
+    color: white;
+}
+
+body.light-theme .carousel-btn:hover {
+    background: var(--light-accent-hover);
+    box-shadow: 0 4px 12px rgba(201, 100, 66, 0.2);
+}
+
+/* Premium certification/achievement cards */
+body.light-theme .certificate-card {
+    box-shadow: 0 8px 20px var(--light-shadow);
+    background: var(--light-primary);
+}
+
+body.light-theme .certificate-inner {
+    background: linear-gradient(
+        135deg,
+        rgba(201, 100, 66, 0.03) 0%,
+        rgba(248, 248, 255, 0.8) 100%
+    );
+}
+
+body.light-theme .certificate-inner::before {
+    background: radial-gradient(
+        circle at top right,
+        rgba(201, 100, 66, 0.06),
+        transparent 70%
+    );
+}
+
+body.light-theme .cert-stamp {
+    background: rgba(201, 100, 66, 0.08);
+    color: var(--light-accent);
+}
+
+body.light-theme .certificate-card:hover .cert-stamp {
+    background: rgba(201, 100, 66, 0.15);
+}
+
+body.light-theme .cert-skills span {
+    background: rgba(201, 100, 66, 0.08);
+    color: var(--light-accent);
+}
+
+/* Achievement card premium light theme */  
+body.light-theme .achievement-icon {
+    color: var(--light-accent);
+}
+
+body.light-theme .achievement-meta {
+    border-top: 1px solid var(--light-border);
+}
+
+/* Explore button premium light theme */
+body.light-theme .explore-button {
+    color: var(--light-accent);
+    border: 2px solid var(--light-accent);
+}
+
+body.light-theme .explore-button::before {
+    background: rgba(201, 100, 66, 0.08);
+}
+
+body.light-theme .explore-button:hover {
+    box-shadow: 0 5px 20px rgba(201, 100, 66, 0.15);
+}
+
+/* Premium footer for light theme */
+body.light-theme .footer-logo {
+    color: var(--light-accent);
+}
+
+body.light-theme .footer-logo::after {
+    background: var(--light-accent);
+}
+
+body.light-theme .footer-links a:hover {
+    color: var(--light-accent);
+}
+
+body.light-theme .footer-links a::before {
+    background-color: var(--light-accent);
+}
+
+body.light-theme .footer-connect .social-icons a:hover {
+    color: var(--light-accent);
+    background: rgba(201, 100, 66, 0.1);
+}
+
+body.light-theme .footer-bottom::before {
+    background: linear-gradient(to right, transparent, var(--light-accent), transparent);
 }
