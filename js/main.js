@@ -463,7 +463,7 @@ const initAnimations = () => {
         .forEach(el => observer.observe(el));
 };
 
-// Theme handling
+// Theme handling - Updated to make dark theme primary and not follow device preferences
 const initTheme = () => {
     document.querySelector('.navbar').appendChild(elements.themeToggle);
     
@@ -476,7 +476,17 @@ const initTheme = () => {
     };
 
     elements.themeToggle.addEventListener('click', toggleTheme);
-    if (localStorage.getItem('theme') === 'light') toggleTheme();
+    
+    // Only change theme if explicitly set to light in localStorage
+    if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-theme');
+        elements.themeToggle.querySelector('i').className = 'fas fa-sun';
+    } else {
+        // Ensure dark theme is set as default
+        document.body.classList.remove('light-theme');
+        localStorage.setItem('theme', 'dark');
+        elements.themeToggle.querySelector('i').className = 'fas fa-moon';
+    }
 };
 
 const initGridAnimation = () => {

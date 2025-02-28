@@ -1231,3 +1231,50 @@ body.light-theme .profile-card:hover {
     border-color: var(--light-accent);
     box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
 }
+
+/* Ensure dark theme is default by removing any potential media queries that change theme based on device preference */
+
+/* Remove or comment out any media query that might be setting themes based on device preference like this:
+@media (prefers-color-scheme: light) {
+    body:not(.dark-theme) {
+        --primary-color: var(--light-primary);
+        --secondary-color: var(--light-secondary);
+        --text-primary: var(--light-text-primary);
+        --text-secondary: var(--light-text-secondary);
+        --accent-color: var(--light-accent);
+        --highlight-color: var(--light-accent-hover);
+        --border-light: var(--light-border);
+        --shadow-color: var(--light-shadow);
+        
+        background: var(--light-primary);
+        color: var(--light-text-primary);
+    }
+}
+*/
+
+/* Default all bodies to dark theme. Using .dark-theme class is redundant now, but kept for clarity */
+body, body.dark-theme {
+    background: var(--primary-color);
+    color: var(--text-primary);
+}
+
+/* Light theme must be explicitly applied via class */
+body.light-theme {
+    --primary-color: var(--light-primary);
+    --secondary-color: var(--light-secondary);
+    --text-primary: var(--light-text-primary);
+    --text-secondary: var(--light-text-secondary);
+    --accent-color: var(--light-accent);
+    --highlight-color: var(--light-accent-hover);
+    --border-light: var(--light-border);
+    --shadow-color: var(--light-shadow);
+    
+    --overlay-light: rgba(201, 100, 66, 0.04);
+    --overlay-dark: rgba(51, 51, 51, 0.7);
+    --shadow-accent: rgba(201, 100, 66, 0.15);
+    --gradient-primary: linear-gradient(170deg, var(--light-primary) 0%, var(--light-secondary) 100%);
+    --gradient-card: var(--light-card-gradient);
+    
+    background: var(--light-primary);
+    color: var(--light-text-primary);
+}
